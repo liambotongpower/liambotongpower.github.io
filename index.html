@@ -1,45 +1,32 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title> Trinity Think Tank </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Text</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Ensure the body takes up the full screen */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center; /* Horizontally center the text */
+            align-items: center; /* Vertically center the text */
+    	    font-family: 'Roboto', sans-serif; 
+	    background-color: white; /* Set background color to white */
+        }
+
+        /* Style the text */
+        h1 {
+            font-size: 48px; /* Large font size */
+            color: black; /* Black text color */
+            margin: 0;
+        }
+    </style>
 </head>
-
 <body>
-
-    <h1> This is a cute dog </h1>
-    <a href="https://www.dog.com">
-    <img src="images/dog.png.webp"
-    alt="This is a picture of a cute dog"
-    height = "200">
-    </a>
-
-    <h3> Woof woof </h3>
-    <img src="images/heart.gif">
-
-    <h4> This is music </h4>
-    <audio controls muted loop>
-        <source src = "audio/audio1.mp3" type = "audio/mpeg">
-    </audio>
-
-    <script src = "main.js"></script>
-
-    <h5> This is a video </h5>
-    <video controls autoplay width = "20px">
-        <source src = "videos/blueElement.mp4" type = "video/mp4">
-    </video>
-
+    <h1>Trinity Think Tank</h1>
 </body>
-
 </html>
-<!-- 
-always include alt text for images 
-1. Add controls
-2. Add autoplay
-3. Can add muted
-4. Can add loop 
-5.         <source src = "audio.wav" type = "audio/wav">
-6. source files
-7. type for files "not audio1.mp3 but audio/mpeg"
-8. Different elements require different tags
--->
+
