@@ -4,9 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>liampower.ie</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: #2d3748;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero a {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #4a5568;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero a:hover {
+            background-color: #2d3748;
+        }
+    </style>
 </head>
 <body>
-    <h1>This is liampower.ie</h1>
-    <p><a href="git.txt">View Git Commands Reference Guide</a></p>
+    <section class="hero">
+        <h1>Welcome to liampower.ie</h1>
+        <p>This is a test website for Liam Power</p>
+        <a href="git.txt">View Git Commands Reference Guide</a>
+    </section>
 </body>
 </html>
