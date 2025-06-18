@@ -1,0 +1,251 @@
+# Git Commands Reference Guide
+
+## Git Add Commands
+
+1. git add: Add file contents to the index
+2. git add -A: Update the index by adding new files, modifying existing files, and removing deleted files
+3. git add -e: Open the diff vs. the index in an editor and let the user edit it
+4. git add -f: Allow adding otherwise ignored files
+5. git add -i: Add modified contents in the working tree interactively to the index
+6. git add -n: Don't actually add the file(s), just show if they exist and/or will be ignored
+7. git add -N: Record only the fact that the path will be added later
+8. git add -p: Interactively choose hunks of patch between the index and the work tree
+9. git add -u: Update the index just where it already has an entry matching pathspec
+10. git add -v: Be verbose
+11. git add --all: Update the index not only where the working tree has a file matching pathspec
+12. git add --chmod: Override the executable bit of the added files
+13. git add --dry-run: Don't actually add the file(s), just show if they exist
+14. git add --force: Allow adding otherwise ignored files
+15. git add --ignore-errors: Continue adding files when some files cannot be added due to errors
+16. git add --ignore-missing: Check if any of the given files would be ignored
+17. git add --interactive: Add modified contents in the working tree interactively
+18. git add --no-all: Update the index by adding new files and files modified in the working tree
+19. git add --no-warn-embedded-repo: Suppress warning when adding an embedded repository
+20. git add --patch: Interactively choose hunks of patch between the index and the work tree
+21. git add --pathspec-from-file: Pathspec is passed in file instead of commandline args
+22. git add --refresh: Don't add the file(s), but only refresh their stat() information
+23. git add --renormalize: Apply the "clean" process freshly to all tracked files
+24. git add --sparse: Allow updating index entries outside of the sparse-checkout cone
+25. git add --update: Update the index just where it already has an entry matching pathspec
+26. git add --verbose: Be verbose
+
+## Git Branch Commands
+
+1. git branch: List, create, or delete branches
+2. git branch -a: List both remote-tracking branches and local branches
+3. git branch -c: Copy a branch, together with its config and reflog
+4. git branch -C: Shortcut for --copy --force
+5. git branch -d: Delete a branch (must be fully merged)
+6. git branch -D: Shortcut for --delete --force
+7. git branch -f: Reset branch to start-point, even if branch exists
+8. git branch -l: List branches (with optional pattern matching)
+9. git branch -m: Move/rename a branch, together with its config and reflog
+10. git branch -M: Shortcut for --move --force
+11. git branch -r: List or delete remote-tracking branches
+12. git branch -t: Set up tracking configuration for new branch
+13. git branch -u: Set up branch's tracking information
+14. git branch --abbrev: Show shortest prefix of commit object name
+15. git branch --contains: List branches containing specified commit
+16. git branch --edit-description: Edit branch description
+17. git branch --format: Format branch listing output
+18. git branch --list: List branches with optional pattern matching
+19. git branch --merged: List branches merged into specified commit
+20. git branch --no-merged: List branches not merged into specified commit
+21. git branch --points-at: List branches of given object
+22. git branch --set-upstream-to: Set branch's upstream branch
+23. git branch --show-current: Print name of current branch
+24. git branch --sort: Sort branches based on specified key
+25. git branch --unset-upstream: Remove upstream information for branch
+
+## Git Checkout Commands
+
+1. git checkout: Switch branches or restore working tree files
+2. git checkout -b: Create a new branch and switch to it
+3. git checkout -B: Create or reset a branch and switch to it
+4. git checkout -d: Detach HEAD at specified commit
+5. git checkout -f: Force checkout, discard local changes
+6. git checkout -l: Create the new branch's reflog
+7. git checkout -m: Merge local changes when switching branches
+8. git checkout -p: Interactively select hunks to discard
+9. git checkout -q: Quiet, suppress feedback messages
+10. git checkout --conflict: Specify conflict style for merge
+11. git checkout --detach: Detach HEAD at specified commit
+12. git checkout --guess: Guess branch name from remote tracking branch
+13. git checkout --ignore-other-worktrees: Checkout branch even if in use by another worktree
+14. git checkout --ignore-skip-worktree-bits: Ignore sparse patterns in checkout
+15. git checkout --merge: Merge local changes when switching branches
+16. git checkout --no-guess: Disable branch name guessing
+17. git checkout --no-track: Do not set up upstream configuration
+18. git checkout --orphan: Create a new orphan branch
+19. git checkout --overlay: Never remove files from index or working tree
+20. git checkout --overwrite-ignore: Overwrite ignored files when switching branches
+21. git checkout --patch: Interactively select hunks to discard
+22. git checkout --pathspec-from-file: Take pathspec from file
+23. git checkout --progress: Force progress status reporting
+24. git checkout --quiet: Suppress feedback messages
+25. git checkout --recurse-submodules: Update submodules when switching branches
+26. git checkout --theirs: Checkout their version for unmerged paths
+27. git checkout --track: Set up tracking configuration for new branch
+28. git checkout --verbose: Show detailed feedback
+
+## Git Clean Commands
+
+1. git clean: Remove untracked files from the working tree
+2. git clean -d: Recurse into untracked directories
+3. git clean -f: Force deletion of files and directories
+4. git clean -i: Show and clean files interactively
+5. git clean -n: Show what would be done without removing anything
+6. git clean -q: Be quiet, only report errors
+7. git clean -x: Remove ignored files in addition to untracked files
+8. git clean -X: Remove only files ignored by Git
+9. git clean --exclude: Use additional exclude pattern
+10. git clean --force: Force deletion of files and directories
+11. git clean --interactive: Show and clean files interactively
+12. git clean --quiet: Be quiet, only report errors
+
+## Git Commit Commands
+
+1. git commit: Record changes to the repository
+2. git commit -a: Automatically stage modified and deleted files
+3. git commit -c: Reuse commit message and edit it
+4. git commit -C: Reuse commit message without editing
+5. git commit -e: Edit commit message
+6. git commit -F: Take commit message from file
+7. git commit -m: Use specified message for commit
+8. git commit -n: Bypass pre-commit and commit-msg hooks
+9. git commit -p: Use interactive patch selection
+10. git commit -q: Suppress commit summary message
+11. git commit -s: Add Signed-off-by trailer
+12. git commit -v: Show unified diff in commit message
+13. git commit --amend: Replace tip of current branch with new commit
+14. git commit --author: Override commit author
+15. git commit --date: Override author date
+16. git commit --dry-run: Show what would be committed
+17. git commit --fixup: Create fixup commit
+18. git commit --no-edit: Use commit message without editing
+19. git commit --no-verify: Bypass pre-commit and commit-msg hooks
+20. git commit --reset-author: Reset author information
+21. git commit --squash: Create squash commit
+22. git commit --status: Include status in commit message
+
+## Git Merge Commands
+
+1. git merge: Join two or more development histories together
+2. git merge --abort: Abort the current conflict resolution process
+3. git merge --allow-unrelated-histories: Allow merging histories that do not share a common ancestor
+4. git merge --autostash: Automatically create a temporary stash entry before the operation
+5. git merge --commit: Perform the merge and commit the result
+6. git merge --continue: Continue the merge after resolving conflicts
+7. git merge --edit: Edit the merge commit message
+8. git merge --ff: Resolve the merge as a fast-forward when possible
+9. git merge --ff-only: Resolve the merge as a fast-forward only
+10. git merge --gpg-sign: GPG-sign the resulting merge commit
+11. git merge --log: Include one-line descriptions from commits being merged
+12. git merge --no-commit: Perform the merge but stop before creating a merge commit
+13. git merge --no-edit: Accept the auto-generated merge message
+14. git merge --no-ff: Create a merge commit in all cases
+15. git merge --no-verify: Bypass pre-merge and commit-msg hooks
+16. git merge --progress: Show progress status
+17. git merge --quiet: Operate quietly
+18. git merge --quit: Forget about the current merge in progress
+19. git merge --rerere-autoupdate: Allow rerere to update the index with resolution
+20. git merge --signoff: Add Signed-off-by trailer to the commit message
+21. git merge --squash: Produce the working tree and index state as if a real merge happened
+22. git merge --stat: Show a diffstat at the end of the merge
+23. git merge --strategy: Use the given merge strategy
+24. git merge --strategy-option: Pass merge strategy specific option
+25. git merge --verbose: Be verbose
+26. git merge --verify-signatures: Verify that the tip commit of the side branch is signed
+
+## Git Pull Commands
+
+1. git pull: Fetch from and integrate with another repository or local branch
+2. git pull -a: Append ref names and object names to FETCH_HEAD
+3. git pull -f: Force update of local branches
+4. git pull -j: Set number of parallel children for fetching
+5. git pull -k: Keep downloaded pack
+6. git pull -p: Remove remote-tracking references that no longer exist
+7. git pull -q: Be quiet, suppress progress reporting
+8. git pull -r: Rebase current branch on top of upstream branch
+9. git pull -t: Fetch all tags from remote
+10. git pull -v: Be verbose, show progress
+11. git pull --all: Fetch all remotes
+12. git pull --atomic: Use atomic transaction to update refs
+13. git pull --autostash: Create temporary stash before operation
+14. git pull --depth: Limit fetching to specified number of commits
+15. git pull --dry-run: Show what would be done without making changes
+16. git pull --ff-only: Only update if there is no divergent local history
+17. git pull --force: Force update of local branches
+18. git pull --no-edit: Accept auto-generated merge message
+19. git pull --no-ff: Create merge commit even when fast-forward is possible
+20. git pull --no-rebase: Merge upstream branch into current branch
+21. git pull --no-tags: Disable automatic tag following
+22. git pull --progress: Force progress status reporting
+23. git pull --rebase: Rebase current branch on top of upstream branch
+24. git pull --set-upstream: Add upstream reference after successful fetch
+25. git pull --squash: Create single commit instead of merge
+26. git pull --strategy: Use specified merge strategy
+27. git pull --unshallow: Convert shallow repository to complete one
+28. git pull --verify-signatures: Verify tip commit of side branch
+
+## Git Reset Commands
+
+1. git reset: Reset current HEAD to the specified state
+2. git reset -N: Mark removed paths as intent-to-add
+3. git reset -p: Interactively select hunks to reset
+4. git reset -q: Be quiet, only report errors
+5. git reset --hard: Reset index and working tree
+6. git reset --keep: Reset index entries and update files in working tree
+7. git reset --merge: Reset index and update files in working tree
+8. git reset --mixed: Reset index but not working tree
+9. git reset --no-refresh: Skip refreshing index after mixed reset
+10. git reset --pathspec-from-file: Take pathspec from file
+11. git reset --quiet: Be quiet, only report errors
+12. git reset --refresh: Refresh index after mixed reset
+13. git reset --soft: Reset HEAD without touching index or working tree
+
+## Git Restore Commands
+
+1. git restore: Restore working tree files
+2. git restore --conflict: Specify conflict style for merge
+3. git restore --ignore-skip-worktree-bits: Ignore sparse patterns in restore
+4. git restore --ignore-unmerged: Do not abort on unmerged entries
+5. git restore --merge: Recreate conflicted merge in unmerged paths
+6. git restore --no-overlay: Remove tracked files not in source tree
+7. git restore --no-progress: Disable progress reporting
+8. git restore --ours: Use our version for unmerged paths
+9. git restore --overlay: Never remove files when restoring
+10. git restore --patch: Interactively select hunks to restore
+11. git restore --pathspec-from-file: Take pathspec from file
+12. git restore --progress: Force progress status reporting
+13. git restore --quiet: Suppress feedback messages
+14. git restore --recurse-submodules: Update submodules when restoring
+15. git restore --source: Restore files from specified tree
+16. git restore --staged: Restore the index
+17. git restore --theirs: Use their version for unmerged paths
+18. git restore --worktree: Restore the working tree
+
+## Git Switch Commands
+
+1. git switch: Switch to a specified branch
+2. git switch -c: Create a new branch and switch to it
+3. git switch -C: Create or reset a branch and switch to it
+4. git switch -d: Switch to a commit for inspection and discardable experiments
+5. git switch -f: Force switch, discard local changes
+6. git switch -m: Merge local changes when switching branches
+7. git switch -q: Quiet, suppress feedback messages
+8. git switch --conflict: Specify conflict style for merge
+9. git switch --detach: Switch to a commit for inspection
+10. git switch --discard-changes: Discard local changes when switching
+11. git switch --force: Force switch, discard local changes
+12. git switch --guess: Guess branch name from remote tracking branch
+13. git switch --ignore-other-worktrees: Switch branch even if in use by another worktree
+14. git switch --merge: Merge local changes when switching branches
+15. git switch --no-guess: Disable branch name guessing
+16. git switch --no-progress: Disable progress reporting
+17. git switch --no-track: Do not set up upstream configuration
+18. git switch --orphan: Create a new orphan branch
+19. git switch --progress: Force progress status reporting
+20. git switch --quiet: Suppress feedback messages
+21. git switch --recurse-submodules: Update submodules when switching branches
+22. git switch --track: Set up tracking configuration for new branch
